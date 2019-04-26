@@ -3,5 +3,5 @@ This is a referral system which allows users to create referral links to promote
 
  # Usage:
    ```
-   python hmenencoder.py <input_file>
+   flask run
    ```
