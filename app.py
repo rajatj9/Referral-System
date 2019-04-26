@@ -117,7 +117,10 @@ def referral():
     ref = Referral(username=current_user.username, campaign_name=form.campaign_name.data, redirect_link=form.redirect_link.data, referral_link = generated_link, click_count = 0)
     db.session.add(ref)
     db.session.commit()
-    return render_template('referral.html', name=current_user.username, link=generated_link)
+    query = db.session.query(Referral).filter_by(username=current_user.username)
+    result = db.session.execute(query)
+    data = result.fetchall()
+    return render_template('referral.html', name=current_user.username, link=generated_link, data = data)
 
 @app.route('/ref', methods=['GET'])
 def ref():
