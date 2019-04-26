@@ -3,9 +3,9 @@ This is a referral system which allows users to create referral links to promote
 
 # Technical Stack Used
   ### Backend:
-  The backend of the web application is built in flask (python).
-  The frontend of the application is built using Bootstrap, HTML and CSS.
-  SQLite has been used for the database of the application.
+  * The backend of the web application is built in flask (python).
+  * The frontend of the application is built using Bootstrap, HTML and CSS.
+  * SQLite has been used for the database of the application.
 
  # Usage:
    ```
